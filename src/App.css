@@ -1,0 +1,78 @@
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem;
+}
+
+li:nth-of-type(odd){
+    background-color: rgba(0, 0, 0, 0.1);
+}
+li:nth-of-type(even){
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+li div{
+    margin: 5px;
+}
+
+li div i{
+    opacity: 0.45;
+    margin: 10px;
+}
+
+button{
+    background-color: rgb(249, 143, 133);;
+    border: none;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(255, 0, 106);
+}
+button:hover{
+    background: lightcoral;
+}
+
+i{
+    font-size: 1.75rem;
+    color: black;
+}
+
+.mark-all{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.todo-opt{
+    width: 3rem;
+    background-color: transparent;
+    border: none;
+    margin-left: 3rem;
+}
+.todo-opt:hover{
+    background-color: transparent;
+}
+
+.todo-options{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 4rem;
+}
+
+input{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(255, 0, 106);
+    padding-left: 0.5rem;
+}
