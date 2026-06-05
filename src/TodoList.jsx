@@ -93,7 +93,7 @@ export default function TodoList() {
                         </li>
                     ))
                     // If we directly do as onClick={deleteTodo(index)}, then it will directly execute delete and nothing will happen on clicking the delete button
-                    // So we make it as an 'arrow function' and pass
+                    // So we make it as an 'arrow function' and pass.
                 }
             </ul>
         </div>
