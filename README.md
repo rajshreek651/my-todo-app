@@ -51,6 +51,7 @@ Similarly, changes triggered in state variable 'todo' when 'Add Task' button is 
 # FEATURE OPTIMIZED
 Even when no value was added to the input bar and 'Add Task' button was clicked, an empty task was getting created which can result in unnecessary usage of memory.
 So we can give condition as:
+
     if(newTodo.trim() === "") { // If the input field is empty or contains only whitespace, we don't add a new task
     
         return;
