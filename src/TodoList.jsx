@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import {v4 as uuidv4} from 'uuid'; 
+import DeleteIcon from '@mui/icons-material/Delete';
 
 export default function TodoList() {
 
@@ -82,9 +83,12 @@ export default function TodoList() {
                                 {todo.isDone ? (
                                     <button className="todo-opt" onClick={() => markAsUndone(todo.id)} style={{textDecorationLine: "line-through"}}><i class="fa-solid fa-square-check" ></i></button>
                                 ) : (
-                                    <button className="todo-opt" onClick={() => markAsDone(todo.id)} style={{textDecorationLine: "none"}}><i class="fa-solid fa-square-check" style={{color: "transparent", backgroundColor: "transparent", border: "3px solid black", borderRadius: "10px", fontSize: "1.25rem"}}></i></button>
+                                    <button className="todo-opt" onClick={() => markAsDone(todo.id)} style={{textDecorationLine: "none"}}><i class="fa-solid fa-square-check" style={{color: "transparent", backgroundColor: "transparent", border: "2.5px solid black", borderRadius: "5px", fontSize: "1.25rem"}}></i></button>
                                 )}
-                                <button className="todo-opt" onClick={() => deleteTodo(todo.id)}><i class="fa-solid fa-circle-xmark"></i></button> 
+                                <button className="todo-opt" onClick={() => deleteTodo(todo.id)}><DeleteIcon /></button> 
+                                {
+                                    // Used Delete Icon from Material UI of React
+                                }
                             </span>
                         </li>
                     ))
