@@ -1,6 +1,6 @@
 # Todo List using React
 
-1. Create the directory to do the whole project.
+1. Create the directory to do the whole project
 
 2. In the Terminal for CWD, run:
     > npm create vite@latest my-todo-app --> to install required dependencies
